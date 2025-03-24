@@ -36,7 +36,8 @@ def test_route():
 handler = app
 
 if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("VERCEL_DEV_SERVER_PORT", 8000))  # Use Vercel's port
-    app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)
+    # import os
+    # port = int(os.environ.get("VERCEL_DEV_SERVER_PORT", 8000))  # Use Vercel's port
+    # app.run(host="0.0.0.0", port=port)
 
